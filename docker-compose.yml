@@ -1,0 +1,16 @@
+version: '3'
+services:
+    app:
+        build:
+            context: .
+            dockerfile: .docker/Dockerfile
+       # command: npm run serve
+        image: shopm8s-webapp:latest
+        networks:
+          - web
+        ports:
+          - 8081:80
+          - 8018:80
+networks:
+    web:
+        driver: bridge
