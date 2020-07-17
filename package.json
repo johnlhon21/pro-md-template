@@ -3,7 +3,7 @@
   "version": "1.4.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve --open",
+    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "dev": "npm run serve",
@@ -64,14 +64,7 @@
       "parser": "babel-eslint"
     },
     "rules": {
-      "no-unused-vars": [
-        "error",
-        {
-          "vars": "all",
-          "args": "after-used",
-          "ignoreRestSiblings": false
-        }
-      ]
+      "no-unused-vars": ["error", { "caughtErrors": "none" }]
     }
   },
   "browserslist": [
